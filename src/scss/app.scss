@@ -1,0 +1,36 @@
+@import 'reset-css/reset.css';
+@import './mixins/buttons';
+@import './variables/colors';
+
+body {
+	font-family: 'Mukta', sans-serif;
+	padding: 1em;
+}
+
+h1, h2 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+	color: $gray-letter;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	color: $gray-letter;
+}
+
+section {
+	margin-bottom: 1.5em;
+}
+
+@import './partials/section-colors';
+@import './partials/section-buttons';
+
+.cv_Button--white {
+	color: $gray-light;
+
+	&:hover {
+		color: $white;
+	}
+} 
