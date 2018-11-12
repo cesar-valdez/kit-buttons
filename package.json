@@ -1,0 +1,28 @@
+{
+  "name": "kit-buttons",
+  "version": "1.0.0",
+  "description": "It's a project of a set of buttons of different color, type (basic and outline) and size made with html, SASS and was used parcel js",
+  "main": "index.js",
+  "dependencies": {
+    "reset-css": "^4.0.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.14.3"
+  },
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesar-valdez/kit-buttons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesar-valdez/kit-buttons/issues"
+  },
+  "homepage": "https://github.com/cesar-valdez/kit-buttons#readme"
+}
