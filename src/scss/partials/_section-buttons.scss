@@ -1,0 +1,47 @@
+.cv_Button {
+	padding: 1em 1.5em;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 0.75em;
+	cursor: pointer;
+	transition: 0.5s ease;
+		
+	&:focus {
+		outline: 0;
+	}
+
+	&--sm {
+		padding: 0.7em 1.5em !important;
+	}
+
+	&--md {
+		padding: 1em 2em !important;
+	}
+
+	&--lg {
+		padding: 1.5em 3em !important;
+	}
+
+	&--block {
+		display: block;
+		width: 100%;
+	}
+	
+	@include build-btn (white, $white, $white, $gray-light); 
+	@include build-btn (red, $red, $white, $red-hard); 
+	@include build-btn (blue, $blue, $white, $blue-hard); 
+	@include build-btn (orange, $orange, $white, $orange-hard);
+	@include build-btn (green, $green, $white, $green-hard);
+	@include build-btn (gray, $gray, $white, $gray-hard);
+	@include build-btn (purple, $purple, $white, $purple-hard);
+		
+	&-outline {
+		@include build-btn-outline (white, $white, $gray-letter, $gray-light); 
+		@include build-btn-outline (red, $white, $red, $red-hard); 
+		@include build-btn-outline (blue, $white, $blue, $blue-hard); 
+		@include build-btn-outline (orange, $white, $orange, $orange-hard);		
+		@include build-btn-outline (green, $white, $green, $green-hard);		
+		@include build-btn-outline (gray, $white, $gray, $gray-hard);		
+		@include build-btn-outline (purple, $white, $purple, $purple-hard);		
+	}
+} 

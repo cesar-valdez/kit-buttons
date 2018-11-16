@@ -1,0 +1,61 @@
+.cv_Color {
+	display: flex;
+	
+	&-bg {
+		margin: 0em 1em;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:before {
+			content: " ";
+			width: 4em;
+			height: 2em;
+			display: block;
+			border-radius: 4px;
+			margin: 0 auto .5em auto;
+		}
+
+		&-span {
+			color: $gray-letter;
+			font-size: 0.8em;
+		}
+
+		&--red {
+			&:before {
+				background-color: $red;
+			}
+		}
+
+		&--blue {
+			&:before {
+				background-color: $blue;
+			}
+		}
+
+		&--orange {
+			&:before {
+				background-color: $orange;
+			}
+		}
+
+		&--green {
+			&:before {
+				background-color: $green;
+			}
+		}
+
+		&--gray {
+			&:before {
+				background-color: $gray;
+			}
+		}
+
+		&--purple {
+			&:before {
+				background-color: $purple;
+			}
+		}
+	}
+} 
